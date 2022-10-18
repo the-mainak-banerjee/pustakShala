@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PustakShala-Registration</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <header>
+        <div class="header_div">
+            <a href="/index.html" class="header_logo">
+                <img class="header_logo_image" src="/images/android-chrome-512x512.png" alt="PustakShala_Logo"/>
+                <h2 class="header_logo_text">PustakShala</h2>
+            </a>
+            <div>
+                <ul class="header_menu">
+                    <li><a  class="header_menu_items" href="/index.html">Home</a></li>
+                    <li><a  class="header_menu_items" href="/member_list.html">Member_List</a></li>
+                    <li><a  class="header_menu_items  active_item" href="/book_registration.html">Book_Registration</a></li>
+                    <li><a  class="header_menu_items" href="/feedback.html">Feedback</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="book_registration_main_container">
+            <div class="form_container">
+                <h3>Register To Get A Book</h3>
+                <form>
+                    <div class="form-field">
+                        <label for="member_name">Your Name:</label>
+                        <input id="member_name" type="text" placeholder="John Doe"/>
+                    </div>
+                    <div class="form-field">
+                        <label for="member_phone">Your Contact No:</label>
+                        <input id="member_phone" type="number" placeholder="9876543210"/>
+                    </div>
+                    <div class="form-field">
+                        <label for="member_issued_book">Book Name:</label>
+                        <input id="member_issued_book" type="text" placeholder="Atomic Habit"/>
+                    </div>
+                    <button>Submit</button>
+                    <p class="form_response">Form Submitted Successfully</p>
+                </form>
+            </div>
+            
+        </div>
+    </section>
+
+    <script src='book_registration.js'/>
+</body>
+</html>

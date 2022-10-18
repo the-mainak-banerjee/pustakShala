@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0;
+}
+
+:root{
+    --primary-color: #142864;
+    --secondary-color: #419CF5;
+    --ternary-color: #F3F6F9;
+    --off-white: #E5E7EB;
+    --border-radius: 0.5rem;
+}
+
+
+html,
+body{
+    height: 100%;
+    box-sizing: border-box;
+}
+
+/* Header Style */
+
+header{
+    background-color: var(--primary-color);
+    padding: 1.5rem 8rem ; 
+    color: var(--secondary-color);
+}
+
+.header_logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.header_logo_image{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.header_logo_text{
+    font-family: 'Macondo', cursive;
+}
+
+.header_div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_menu{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 2rem;
+}
+
+.header_menu_items {
+    text-decoration: none;
+    color: var(--ternary-color);
+}
+
+.header_menu_items:hover{
+    color: var(--secondary-color);
+}
+
+.active_item{
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+/* Paragraph Style */
+p,a,button,label,input,table{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* section style */
+
+section{
+    background-color: var(--off-white);
+    min-height: calc(100% - 75px);
+    padding: 0rem 8rem; 
+}
+
+/* Form style */
+
+.form_container{
+    width: 60vw;
+    padding: 1rem;
+    border: 2px solid var(--secondary-color);
+    border-radius: var(--border-radius);
+}
+
+.form_container > h3{
+    text-align: center;
+}
+
+form{
+    margin: 1rem 0;
+}
+
+input, textarea{
+    border-radius: var(--border-radius);
+    padding: 0.5rem;
+    border: none;
+    outline-color: var(--secondary-color);
+}
+
+.form-field{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    margin: 1rem 0rem;
+}
+
+button{
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.5rem 2rem;
+    margin: 1rem 0rem;
+    border: none;
+    border-radius: var(--border-radius);
+    width: 100%;
+    font-size: medium;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: var(--secondary-color);
+}
+
+.form_response{
+    text-align: center;
+    font-weight: bold;
+    display: none;
+}
+
+.success{
+    color: green;
+}
+
+.failure{
+    color: red;
+}
+
+/* table Style */
+
+table{
+    margin: 1rem 0;
+}
+
+table,th,td{
+    border: 1.2px solid var(--primary-color);
+    border-collapse: collapse;    
+}
+
+th{
+    text-align: left;
+    padding: 0.5rem 1rem;
+}
+
+td{
+    padding: 0.5rem 1rem;
+}
+
+tr:nth-child(even){
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+/* Home Page Style */
+
+.home_main_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 50%;
+    height: 80vh;
+    margin: auto;
+    text-align: center;
+}
+
+.home_logo{
+    width: 6rem;
+    height: 6rem;
+}
+
+/* Book_Registration and Feedback Page Style */
+
+.member_list_main_container, .book_registration_main_container, .feedback_main_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
